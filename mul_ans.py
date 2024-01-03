@@ -1,6 +1,3 @@
-# Thursday 04 January 2024 11:53:49 PM IST
-# Friday 05 January 2024 12:10:43 AM IST -- done with preety printing
-
 a = input("Enter multiplier: ")
 b = input("Enter multiplicand: ")
 

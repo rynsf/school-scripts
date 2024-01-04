@@ -1,17 +1,19 @@
+from preetyprint import leftpad
+
 a = input("Enter multiplier: ")
 b = input("Enter multiplicand: ")
 
 maxlen = len(str(int(a) * int(b)))
 
-print(" "*(maxlen-len(a)) + a)
-print(" "*(maxlen-len(b)-1) + "x" + b) # TODO just write a left pad function!
+print(leftpad(maxlen, a))
+print(leftpad(maxlen, 'x'+b))
 print("_"*maxlen)
 
 p = 0
 
-for n in b:
+for n in b[::-1]:
     out = str(int(n) * int(a))
-    print(" "*(maxlen-len(str(out))-p) + out + "X"*p)
+    print(leftpad(maxlen, out + "X"*p))
     p += 1
 
 print("_"*maxlen)

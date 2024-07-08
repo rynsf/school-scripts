@@ -59,15 +59,15 @@ def prettyPrintLcm(nums):
     print(mulToPrint, '=', mul)
 
 
-
-nums = []
-i = input('Enter a number(or return to find lcm): ')
-while i:
-    nums.append(int(i))
+if __name__ == "__main__":
+    nums = []
     i = input('Enter a number(or return to find lcm): ')
+    while i:
+        nums.append(int(i))
+        i = input('Enter a number(or return to find lcm): ')
 
-if nums:
-    prettyPrintLcm(nums)
+    if nums:
+        prettyPrintLcm(nums)
 
 
 

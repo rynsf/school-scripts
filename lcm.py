@@ -57,6 +57,7 @@ def prettyPrintLcm(nums):
     mulToPrint = mulToPrint[:-2] #remove trailing multiply
     print()
     print(mulToPrint, '=', mul)
+    return mul
 
 
 if __name__ == "__main__":
